@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Exam System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 Secure Exam Evaluation</h1>
+
+    <textarea id="answer" placeholder="Enter your answer..."></textarea>
+
+    <button onclick="submitAnswer()">Evaluate</button>
+
+    <div class="card">
+        <h3>Encrypted Data</h3>
+        <p id="enc"></p>
+    </div>
+
+    <div class="card">
+        <h3>Result</h3>
+        <p id="score"></p>
+
+        <div class="bar">
+            <div id="progress"></div>
+        </div>
+
+        <p id="feedback"></p>
+    </div>
+
+    <div class="card">
+        <h3>Logs</h3>
+        <ul id="logs"></ul>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
